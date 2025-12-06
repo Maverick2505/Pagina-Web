@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor 3D</title>
+
+  <!-- Librería model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- MENÚ -->
+<header>
+    <h1>Visor 3D</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="perfil.html">Mi Perfil</a>
+    </nav>
+</header>
+
+<!-- OBTENER EL MODELO DESDE LA URL -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const modelo = params.get("m");
+</script>
+
+<!-- VISOR 3D -->
+<section class="viewer">
+  <model-viewer id="viewer"
+    camera-controls
+    auto-rotate
+    exposure="1.2"
+    shadow-intensity="1"
+    environment-image="neutral"
+    alt="Modelo 3D"
+  ></model-viewer>
+</section>
+
+<script>
+  // Colocamos el modelo seleccionado en el visor
+  document.getElementById("viewer").src = "modelos/" + modelo;
+</script>
+
+</body>
+</html>

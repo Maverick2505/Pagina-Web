@@ -1,0 +1,93 @@
+/* ============================
+   ESTILOS GENERALES
+============================ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0d1117;        /* Fondo oscuro */
+  color: #e6edf3;             /* Texto claro */
+}
+
+header {
+  background: #161b22;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #58a6ff;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #58a6ff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================
+   MODELO 3D EN INDEX.HTML
+============================ */
+.model-viewer-container {
+  width: 100%;
+  max-width: 900px;  /* más grande y centrado */
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+
+model-viewer {
+  width: 100%;
+  height: 550px;   /* aumenta la altura */
+  border-radius: 10px;
+  background: #111;
+}
+
+
+/* ============================
+   PERFIL DEL USUARIO
+============================ */
+.profile {
+  text-align: center;
+  padding: 35px;
+}
+
+/* FOTO DE PERFIL (CORREGIDO - MÁS PEQUEÑA) */
+.foto-perfil {
+  width: 120px;      /* tamaño reducido */
+  height: 120px;
+  margin: 0 auto 20px auto;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* evita deformación */
+  border-radius: 50%;       /* hace la imagen circular */
+  border: 3px solid #58a6ff;
+  box-shadow: 0 0 10px #0004;
+}
+
+.profile h2 {
+  margin-top: 15px;
+  font-size: 26px;
+}
+
+.profile p {
+  max-width: 600px;
+  margin: 10px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
