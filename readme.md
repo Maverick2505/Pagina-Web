@@ -68,11 +68,12 @@ I enjoy working with Blender, 3D modeling, and learning web development.
 
 ```html
 <model-viewer src="models/NEW_MODEL.glb"></model-viewer>
+```
 5. Add a link to the new model inside index.html.
 
 ---
 
-🚀 Deployment
+##🚀 Deployment
 
 This website is hosted using GitHub Pages.
 Every time you update your code, simply commit and push your changes to the main branch.
